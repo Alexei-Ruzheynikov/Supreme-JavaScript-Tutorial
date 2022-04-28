@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регулярные выражения</title>
+</head>
+<body>
+
+
+<script>
+
+
+
+let str = '17:38';
+console.log(str.replace(/[012][\d]:[0-5]\d/g,'!'));
+
+
+
+
+
+// let str = '2010';
+// console.log(str.replace(/[12][901][\d]{2}/g,'!'));
+
+// let str = '2025-12-31 12:59:59';
+// console.log(str.split(/[- :]/));
+
+
+// let str = '1 23 456 789';
+// console.log(str.search(/\d{3}/));
+
+
+
+
+// let str = '31.12.2025 30.11.2024 29.10.2023';
+// console.log(str.replace(/\d+\.\d+\.\d{4}/g, function(match){
+// return match.split('.').reverse().join('-');
+// }));
+
+// let str = '123 456 789';
+// console.log(str.replace(/\d{3}/g, function(match){
+// return match.split('').reverse().join('');
+// }));
+
+
+
+
+// let str = 'aaa [2] bbb [3] ccc [12] ddd';
+// console.log(str.replace(/\d+/g, function(match){
+// return +match * 2;
+// }));
+
+
+
+// let str = '<a href="" class="eee" id="zzz">';
+// let res = str.match(/[a-z]+(?==")/g);
+// console.log(res);
+
+
+
+
+// let str = 'func1() func2() func3()';
+// let res = str.match(/func[1-3](?=())/g);
+// console.log(res);
+
+// let str = 'aaa aaa bbb bbb ccc ddd';
+// let res = str.replace(/([a-z]{3}) \1+/g,'!');
+// console.log(res);
+
+
+
+// let str = 'a aa aaa aaaa aaaaa';
+// let res = str.replace(/(a)\1+/g,'!');
+// console.log(res);
+    
+// let str = 'aaa bbb ccc xyz';
+// let res = str.replace(/([a-z])\1\1/g,'!');
+// console.log(res);
+
+
+// let str = 'sss site.ru zzz site.com kkk';
+// let res = str.replace(/[a-z]+\.[a-z]+/g,'<a href="http://$&">$&</a>');
+// console.log(res);
+
+
+// let str = 'a1b2c3';
+// let res = str.replace(/\d+/g,'$&$&');
+// console.log(res);
+
+
+// let str = '31.12.2025';
+// let res = str.replace(/(\d{2})\.(\d{2})\.(\d{4})/g, '$3.$2.$1');
+// console.log(res);
+
+
+// let str = '12 34 56 78';
+// let res = str.replace(/(\d)(\d)/g,'$2$1');
+// console.log(res);
+
+
+
+
+
+
+
+// let str = '31.12.2025';
+// let res = str.match(/(\d{2})\.(\d{2})\.(\d{4})/);
+// console.log(res[0]);
+// console.log(res[1]);
+// console.log(res[2]);
+// console.log(res[3]);
+
+
+
+// let str = 'sss domain.ru zzz';
+// let res = str.match(/([a-z]+)\.([a-z]{2})/)
+// console.log(res[0]);
+// console.log(res[1]);
+// console.log(res[2]);
+
+
+
+// let str = 'zzz xaaax xaaaax xaaaaax';
+// let res = str.match(/xa+x/);
+
+// console.log(res[0]);    // выведет 'xaaax' - найденное
+// console.log(res.index);
+
+
+// let str = 'a1b c34d x567z';
+// let res = str.match(/\d/g,'!');
+// let num = 0;
+// for(let elem of res){
+//     num += +elem;
+// }
+// console.log(num);
+
+
+// let str = 'site.ru sss site.com zzz site.net';
+// let res = str.match(/[a-z]+\.[a-z]+/g,'!');
+// console.log(res);
+
+
+// console.log(/^[a-z]+\.ru$/.test('site.ru'));
+
+
+
+
+// console.log(/^[a-z]+\@mail\.ru$/.test('lalal@mail.ru'));
+
+
+
+
+
+// console.log(/^\d{2}\:\d{2}\:\d{2}$/.test('10:55:24'));
+
+
+
+
+
+
+// console.log(/^\d{4}\.\d{2}\.\d{2}$/.test('1994.04.24'));
+
+
+
+
+// console.log(/^\d{4}-\d{2}-\d{2}$/.test('1994-04-24'));
+
+
+
+
+// console.log(/(jpg|jpeg|png)$/.test('https:/  /dfgfd gd.ru jpgf' ));
+
+
+
+
+// console.log(/(txt|html|php)$/.test('https:/  /dfgfd gd.ru txt' ));
+
+
+
+// console.log(/^http|https:\/\/$/.test('https://dfgfdgd.ru'));
+
+
+
+// console.log(/^http:\/\/$/.test('http://'));
+
+
+// let str = 'aeeea aeea aea axa axxa axxxa';
+// console.log(str.replace(/a(e{2}|x+)a/g,'!'));
+
+
+
+
+// let str = 'aeeea aeea aea axa axxa axxxa';
+// console.log(str.replace(/a(e+|x+)a/g,'!'));
+
+
+
+
+
+// let str = 'abc def xyz';
+// console.log(str.replace(/[a-z]{3}$/g,'!'));
+
+
+// let str = 'abc def xyz';
+// console.log(str.replace(/^[a-z]{3}/g,'!'));
+
+
+// let str = 'xaz x$z x-z xcz x+z x%z x*z';
+// console.log(str.replace(/x[$+-]z/g,'!'));
+
+
+// let str = 'xaz xBz xcz x-z x@z';
+// console.log(str.replace(/x[a-zA-Z-]z/g,'!'));
+
+
+
+// let str = '^xx axx ^zz bkk';
+// console.log(str.replace(/[^^ ][a-z]{2}/g,'!'));
+
+
+
+// let str = '^xx axx ^zz bkk @ss';
+// console.log(str.replace(/[^^@ ][a-z]{2}/g,'!'));
+
+
+
+
+// let str = '^xx axx ^zz bkk @ss';
+// console.log(str.replace(/[\^\@][a-z]{2}/g,'!'));
+
+
+
+
+
+// let str = '[abc] {abc} abc (abc) [abc]';
+// console.log(str.replace(/[\[\(\{][abc]+[\]\}\)]/g,'!'));
+
+
+
+
+// let str = 'x[]z x{}z x.z x()z';
+// console.log(str.replace(/x[\[\]\{\}\(\)]+z/g,'!'));
+
+
+// /[/d.+]/g
+
+// /[^/da-g{3,7}]/g
+
+
+
+// let str = 'xaz x.z x3z x@z x$z xrz';
+// console.log(str.replace(/x[^.@$]z/g,'!'));
+
+
+
+// let str = 'aba aea aca aza axa a.a a+a a*a';
+// console.log(str.replace(/a[.+*]a/g,'!'));
+
+
+
+
+// let str = 'ааа ббб ёёё ззз ййй ААА БББ ЁЁЁ ЗЗЗ ЙЙЙ';
+// console.log(str.replace(/[a-яё+]/g,'!'));
+
+
+// let str = 'wйw wяw wёw wqw';
+// console.log(str.replace(/w[а-яё]w/g,'!'));
+
+
+
+
+// /1[^ex]2/g;
+
+// /x[^2-7]z/g
+
+// /x[^A-Z+]z/g
+
+// /x[^a-z1-5+]z/g
+
+
+
+
+
+// let str = 'aAXa aeffa aGha aza ax23a a3sSa';
+// console.log(str.replace(/a[a-z0-9]+a/g,'!'));
+
+
+// let str = 'aAXa aeffa aGha aza ax23a a3sSa';
+// console.log(str.replace(/a[a-zA-Z]+a/g,'!'));
+
+
+
+// let str = 'aAXa aeffa aGha aza ax23a a3sSa';
+// console.log(str.replace(/a[a-z]a/g,'!'));
+
+
+// let str = 'aAa aea aEa aJa a3a';
+// console.log(str.replace(/a[a-fA-D]a/g,'!'));
+
+
+
+// let str = 'aba aea afa aha aga';
+// console.log(str.replace(/a[a-fj-z]a/g,'!'));
+
+
+
+// let str = 'aba aea afa aha aga';
+// console.log(str.replace(/a[a-g]a/g,'!'));
+
+
+
+
+// let str = 'a1a a3a a7a a9a aba';
+// console.log(str.replace(/a[3-6]a/g,'!'));
+
+
+
+// let str = 'aba aea aca aza axa';
+// console.log(str.replace(/a[bex]a/g,'!'));
+
+
+
+// let str = 'xx xabesx xaadx x123x xa3x';
+// let res = str.replace(/x[a-z]+x/g, '!');
+// console.log(res);
+
+
+
+// let str = 'ave a#a a2a a$a a4a a5a a-a aca';
+// console.log(str.replace(/\s/g,'!'));
+
+
+// let str = 'ave a#b a2b a$b a4b a5b a-b acb';
+// console.log(str.replace(/a\Wb/g,'!'));
+
+
+// let str = 'avb a1b a2b a3b a4b a5b abb acb';
+// console.log(str.replace(/a\Db/g,'!'));
+
+
+// let str = 'aa a1a a22a a333a a4444a a55555a aba aca';
+// console.log(str.replace(/a\d*a/g,'!'));
+
+
+
+// let str = 'a1a a22a a333a a4444a a55555a aba aca';
+// console.log(str.replace(/a\d+a/g,'!'));
+
+
+
+
+
+// let str = 'a1a a2a a3a a4a a5a aba aca';
+// console.log(str.replace(/a\da/g,'!'));
+
+
+
+
+// let str = 'aba accca azzza wwwwa';
+// cnsole.log(str.replace(/a.+?a/g,'!'));
+
+// let str = 'aa aba abba abbba abbbba abbbbba';
+// console.log(str.replace(/ab{4,}a/g,'!'));
+
+
+// let str = 'aa aba abba abbba abbbba abbbbba';
+// console.log(str.replace(/ab{1,2}a/g,'!'));
+
+
+
+// let str = 'aa aba abba abbba abbbba abbbbba';
+// console.log(str.replace(/ab{2,4}a/g,'!'));
+
+
+
+// let str = '[abc] {abc} abc (abc) [abc]';
+// console.log(str.replace(/\[abc\]/g,'!'));
+
+
+// let str = '*+ *q+ *qq+ *qqq+ *qqq qqq+';
+// console.log(str.replace(/\*q+\+/g,'!'));
+
+
+
+// let str = '23 2+3 2++3 2+++3 445 677';
+// console.log(str.replace(/2\+*3/g,'!'));
+
+
+
+// let str = '23 2+3 2++3 2+++3 345 567';
+// console.log(str.replace(/2\++3/g,'!'));
+
+
+// let str = 'a.a aba aea';
+// console.log(str.replace(/a\.a/g,'!'));
+
+
+// let str = '2+3 223 2223';
+// console.log(str.replace(/2\+3/g,'!'));
+
+
+// let str = 'ab abab abab abababab abea';
+// console.log(str.replace(/(ab)+/g,'!'));
+
+
+
+
+
+// let str = 'aa aba abba abbba abca abea';
+// console.log(str.replace(/ab*a/g,'!'));
+
+
+// let str = 'aa aba abba abbba abca abea';
+// console.log(str.replace(/ab?a/g,'!'));
+
+
+// let str = 'aa aba abba abbba abca abea';
+// console.log(str.replace(/ab*a/g,'!'));
+
+
+
+// let str = 'aa aba abba abbba abca abea';
+// console.log(str.replace(/ab*a/g,'!'));
+
+
+
+
+// let str = 'aba aca aea abba adca abea';
+// console.log(str.replace(/ab.a/g, '!'));
+
+
+
+
+// let str = 'aba aca aea abba adca abea';
+// console.log(str.replace(/a..a/g,'!'));
+
+
+// let str = 'ahb acb aeb aeeb adcb axeb';
+// console.log(str.replace(/a.b/g, '!'));
+
+
+
+</script>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
