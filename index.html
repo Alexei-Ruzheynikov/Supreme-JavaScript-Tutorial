@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Коллекции</title>
+</head>
+<body>
+    <!-- <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p> -->
+
+
+    <!-- <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p> -->
+
+    <!-- <p>1</p>
+    <p>2</p>
+    <p>3</p>
+    <p>4</p>
+    <p>5</p> -->
+
+
+    <!-- <div>
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+    </div> -->
+
+    
+
+
+<!-- <input type="text">
+<input type="text">
+<input type="text">
+<input type="text"> -->
+
+<!-- <input type="text">
+<input type="text">
+<input type="text">
+<input type="text"> -->
+
+
+<!-- 
+<p>aaa</p>
+<p>bbb</p>
+<p>ccc</p>
+<p>ddd</p>
+<p>eee</p>
+
+<button>click me</button> -->
+
+
+
+
+<!-- <div></div> -->
+
+
+<!-- <table style="border: 1px solid black;"></table> -->
+<!-- 
+<ul>
+	<li>city1</li>
+	<li>city2</li>
+	<li>city3</li>
+	<li>city4</li>
+</ul> -->
+
+
+
+<!-- 
+<table>
+	<tr>
+		<th>Фамилия</th>
+		<th>Имя</th>
+		<th>Отчество</th>
+	</tr>
+	<tr>
+		<td>Иванов</td>
+		<td>Иван</td>
+		<td>Иванович</td>
+	</tr>
+	<tr>
+		<td>Петров</td>
+		<td>Петр</td>
+		<td>Петрович</td>
+	</tr>
+	<tr>
+		<td>Сидоров</td>
+		<td>Сидр</td>
+		<td>Сидорович</td>
+	</tr>
+</table> -->
+
+
+
+
+
+
+
+
+
+
+<script>
+"use strict";
+
+
+
+// let json = `[
+// 	{
+// 		"name": "user1",
+// 		"age": 25,
+// 		"salary": 1000
+// 	},
+// 	{
+// 		"name": "user2",
+// 		"age": 26,
+// 		"salary": 2000
+// 	},
+// 	{
+// 		"name": "user3",
+// 		"age": 27,
+// 		"salary": 3000
+// 	}
+// ]`;
+// let arr = JSON.parse(json);
+// arr.push({"name": "user6",
+// 		"age": 67,
+// 		"salary": 6000});
+    
+// let res = JSON.stringify(arr);
+// console.log(res);
+
+
+
+// let json = '["user1","user2","user3","user4","user5"]';
+// let arr = JSON.parse(json);
+// arr.push('user7');
+// let res = JSON.stringify(arr);
+// console.log(res);
+
+
+// let json = '["user1","user2","user3","user4","user5"]';
+// let arr = JSON.parse(json);
+// arr[1] = 'user7';
+// let res = JSON.stringify(arr);
+// console.log(res);
+
+
+// let trs = document.querySelectorAll('table tr');
+// let tds = document.querySelectorAll('tr td');
+
+
+// let arr = [];
+
+
+// for(let tr of trs){
+//     for(let td of tr.children){
+//         if(td.tagName == 'TD'){
+//             arr.push(td.innerHTML);
+//         }
+//     }
+// }
+
+// console.log(arr);
+// console.log(JSON.stringify(arr));
+
+
+// for(let td of tds){
+//     console.log(td);
+//     console.log(arr);
+    
+//         // obj['surname'] = tr.firstElementChild.innerHTML;
+//         // obj['name'] = tr.innerHTML;
+//         // obj['patronymic'] = tr.innerHTML;
+// }
+// console.log(obj);
+
+
+
+
+
+
+
+
+
+
+// let lis = document.querySelectorAll('ul li');
+// let arr = [];
+// for(let item of lis){
+//     arr.push(item.innerHTML);
+// }
+// let json = JSON.stringify(arr);
+// console.log(json);
+
+
+
+// let arr = ['user1', 'user2', 'user3', 'user4', 'user5'];
+
+// let json = JSON.stringify(arr);
+// console.log(json);
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let json = `[
+// 	{
+// 		"name": "user1",
+// 		"age": 25,
+// 		"salary": 1000
+// 	},
+// 	{
+// 		"name": "user2",
+// 		"age": 26,
+// 		"salary": 2000
+// 	},
+// 	{
+// 		"name": "user3",
+// 		"age": 27,
+// 		"salary": 3000
+// 	}
+// ]`;
+
+// let arr = JSON.parse(json);
+
+// let table = document.querySelector('table');
+
+// for(let items of arr){
+//     let tr = document.createElement('tr');
+//     for(let item in items){
+//         let td = document.createElement('td');
+//         td.innerHTML = items[item];
+//         tr.appendChild(td);
+//     }
+//     table.appendChild(tr);
+// }
+
+
+
+
+
+
+
+// let json = '["user1","user2","user3","user4","user5"]';
+// let arr = JSON.parse(json);
+
+// let div = document.querySelector('div');
+// let ul = document.createElement('ul');
+// for(let item of arr){
+//     let li = document.createElement('li');
+//     li.innerHTML = item;
+//     ul.appendChild(li);
+// }
+// div.appendChild(ul);
+
+
+
+
+
+
+
+
+// let json = `{
+// 	"data1": [1,2,3],
+// 	"data2": [4,5,6],
+// 	"data3": [7,8,9]
+// }`;
+
+// let obj = JSON.parse(json);
+// let sum = 0;
+// for(let item in obj){
+//     console.log();
+//     for(let one of obj[item]){
+//         sum += one;
+//     }
+// }
+// console.log(sum);
+
+
+// let json = '[1,2,3,4,5]';
+// let arr = JSON.parse(json);
+// let sum = 0;
+// for(let item of arr){
+//     sum += +item;
+// }
+// console.log(sum);
+
+
+
+
+// let obj = `{
+// 	"a": ["a", "b", "c",],
+// 	"b": "111",
+// 	"c": "eee",
+// }`;
+
+
+
+
+
+// let obj = `{
+// 	"a": 1,
+// 	"b": 2,
+// 	"c": "eee",
+// 	"d": true,
+// }`;
+
+
+
+
+
+
+// let arr = '[1, 2, 3, "a", "b", "c"]';
+
+
+// let obj = {1:4, 5:6};
+// for(let key in obj){
+//     console.log(key);
+//     console.log(obj[key]);
+// }
+
+
+
+
+
+// let buffer = new ArrayBuffer(32); // выделим 8 байтов
+// console.log(buffer);
+
+
+// let btn = document.querySelector('button');
+// let elems = document.querySelectorAll('p');
+// let set = new Set;
+// for(let elem of elems){
+//     elem.addEventListener('click', function(){
+//         set.add(this);
+//     })
+// }
+// btn.addEventListener('click', function(){
+//     for(let elem of set){
+//         elem.innerHTML = elem.innerHTML  + '!'; 
+//     }
+// });
+
+
+// let arr = [1,2,3,4,5];
+// let set = new Set(arr);
+// console.log(set);
+
+
+
+
+
+
+// let set = new Set([1,2,3,4]);
+// // let arr = [...set];
+// let arr = Array.from(set);
+// console.log(arr);
+
+
+
+
+
+
+
+
+// let set = new Set([1,2,3,4,5]);
+// let sum = 0;
+// for(let item of set){
+//     sum += +item;
+// }
+// console.log(sum);
+
+
+
+
+
+
+
+// let set = new Set([1,2,3]);
+// console.log(set.has(3));
+// console.log(set.has(4));
+
+
+
+
+// let set = new Set([1,2,3]);
+// console.log(set.size);
+
+
+
+
+
+
+
+
+
+
+// let set = new Set([1,2,3]);
+// set.add(2);
+// console.log(set);
+
+
+
+
+
+// let set = new Set;
+// set.add(1);
+// set.add(2);
+// set.add(3);
+// console.log(set);
+
+
+
+
+
+// let arr = [1, 2, 3, 1, 3, 4];
+// let set = new Set(arr);
+// console.log(set);
+
+
+// let elems = document.querySelectorAll('input');
+// let map = new Map;
+// let i = 1;
+// for(let elem of elems){
+//     map.set(elem, i++);
+// }
+
+// for (let elem of elems){
+//     let arr = [];
+//     elem.addEventListener('keydown', function(умуте){
+//         if(event.code == 'Enter'){
+//             arr.push(this.value);
+//         }
+//         elem.addEventListener('blur', function(){
+//             this.value = arr;
+//         });
+//     })
+// }
+
+
+
+
+
+
+
+
+
+
+// let elems = document.querySelectorAll('input');
+// let map = new Map;
+// let i = 1;
+// for(let elem of elems){
+//     map.set(elem, i++);
+// }
+// for (let elem of elems){
+//     elem.addEventListener('click', function(){
+//         this.value = map.get(this);
+//     })
+// }
+
+
+
+
+
+
+
+
+// let map = new Map;
+
+// let arr1 =  [1,2];
+// let arr2 = [3,4];
+// let arr3 = [5,6];
+
+
+// let obj1 = {12:22};
+// let obj2 = {32:42};
+// let obj3 = {52:62};
+
+// map.set(obj1, arr1);
+// map.set(obj2, arr2);
+// map.set(obj3, arr3);
+
+// let keys = map.keys();
+// let values = map.values();
+// for(key of keys){
+//     console.log(key);
+// }
+// for(value of values){
+//     console.log(value);
+// }
+
+// for(elem of map){
+//     console.log(elem);
+// }
+
+
+
+// let map = new Map;
+
+// let arr1 =  [1,2];
+// let arr2 = [3,4];
+// let arr3 = [5,6];
+
+
+// let obj1 = {12:22};
+// let obj2 = {32:42};
+// let obj3 = {52:62};
+
+// map.set(obj1, arr1);
+// map.set(obj2, arr2);
+// map.set(obj3, arr3);
+
+
+// console.log(map.get(obj1));
+// console.log(map.get(obj2));
+// console.log(map.get(obj3));
+// map.clear();
+// console.log(map.size);
+
+
+// let map = new Map;
+
+// let arr1 =  [1,2];
+// let arr2 = [3,4];
+// let arr3 = [5,6];
+
+// map.set(arr1, 'data1');
+// map.set(arr2, 'data2');
+// map.set(arr3, 'data3');
+
+// console.log(map.get(arr1));
+// console.log(map.get(arr2));
+// console.log(map.get(arr3));
+// console.log(arr1);
+
+
+
+
+
+
+
+// let map = new Map;
+
+// let arr1 = [1, 2];
+// let arr2 = [3, 4];
+
+// map.set(arr1, 'data1');
+// map.set(arr2, 'data2');
+
+// console.log(map.get(arr1));
+// console.log(map.get(arr2));
+
+
+//     let parent = document.getElementByTagName('div');
+//     let nodes = parent.children;
+//     for (let node of nodes) {
+// 	console.log(node.textContent);
+// }
+// let p = document.createElement('p');
+// p.innerHTML = '4';
+// parent.appendChild(p);
+
+// console.log(nodes.length);
+
+// let elems = document.querySelectorAll('p');
+// let arr = [];
+// for(let elem of elems){
+//     arr.push(elem);
+// }
+// let res = arr.slice(1,4);
+// console.log(res);
+
+// let elems = document.querySelectorAll('p');
+// let arr = [...elems];
+// let arr = Array.from(elems);
+// for(let elem of elems){
+//     arr.push(elem);
+// }
+// console.log(arr);
+
+// let elems = document.querySelectorAll('p');
+// console.log(Array.isArray(elems));
+
+</script>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
